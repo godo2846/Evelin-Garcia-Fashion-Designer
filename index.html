@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evelyn Garcia — Fashion Designer</title>
+  <meta name="description" content="Evelyn Garcia, diseñadora de moda. Colecciones, lookbook y atelier.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER: menú a la izquierda, logo centrado, utilidades a la derecha (patrón McQueen / Jacquemus) -->
+  <header class="header" id="header">
+    <button class="header__menu" id="menuOpen" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <a href="#top" class="header__logo">Evelyn Garcia</a>
+    <nav class="header__utils" aria-label="Utilidades">
+      <a href="#colecciones">Colecciones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- MENÚ OVERLAY a pantalla completa -->
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <button class="overlay__close" id="menuClose" aria-label="Cerrar menú">Cerrar</button>
+    <nav class="overlay__nav">
+      <a href="#colecciones">Colecciones</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#sobre">Sobre Evelyn</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="overlay__foot">
+      <a href="#" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:hola@evelyngarcia.com">hola@evelyngarcia.com</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- HERO a pantalla completa con título de temporada + CTA -->
+    <section class="hero">
+      <div class="media media--tone-1">
+        <img src="assets/img/hero.jpg" alt="Campaña de la colección actual" onerror="this.remove()">
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow">Otoño Invierno 2026</p>
+        <h1 class="hero__title">La Colección</h1>
+        <a href="#colecciones" class="btn btn--light">Descubrir</a>
+      </div>
+    </section>
+
+    <!-- SPLIT EDITORIAL: dos imágenes 50/50 con texto (patrón Jacquemus) -->
+    <section class="split">
+      <a href="#lookbook" class="split__item">
+        <div class="media media--tone-2">
+          <img src="assets/img/editorial-1.jpg" alt="" onerror="this.remove()">
+        </div>
+        <div class="split__caption">
+          <p class="eyebrow">Mujer</p>
+          <h2>Prêt-à-porter</h2>
+          <span class="link">Ver más</span>
+        </div>
+      </a>
+      <a href="#atelier" class="split__item">
+        <div class="media media--tone-3">
+          <img src="assets/img/editorial-2.jpg" alt="" onerror="this.remove()">
+        </div>
+        <div class="split__caption">
+          <p class="eyebrow">Hecho a medida</p>
+          <h2>Alta Costura</h2>
+          <span class="link">Ver más</span>
+        </div>
+      </a>
+    </section>
+
+    <!-- MANIFIESTO -->
+    <section class="statement reveal">
+      <p>
+        “Diseño piezas que cuentan una historia: estructura, oficio y emoción
+        en cada costura.”
+      </p>
+      <span class="eyebrow">— Evelyn Garcia</span>
+    </section>
+
+    <!-- COLECCIONES en grilla de 4 (patrón McQueen "New Season's Arrivals") -->
+    <section class="section" id="colecciones">
+      <div class="section__head">
+        <h2 class="section__title">Colecciones</h2>
+        <a href="#lookbook" class="link">Ver todo</a>
+      </div>
+      <div class="grid">
+        <a href="#" class="card reveal">
+          <div class="media media--tone-1"><img src="assets/img/coleccion-1.jpg" alt="" onerror="this.remove()"></div>
+          <h3>Colección I</h3><p>Otoño Invierno 2026</p>
+        </a>
+        <a href="#" class="card reveal">
+          <div class="media media--tone-2"><img src="assets/img/coleccion-2.jpg" alt="" onerror="this.remove()"></div>
+          <h3>Colección II</h3><p>Primavera Verano 2026</p>
+        </a>
+        <a href="#" class="card reveal">
+          <div class="media media--tone-3"><img src="assets/img/coleccion-3.jpg" alt="" onerror="this.remove()"></div>
+          <h3>Colección III</h3><p>Otoño Invierno 2025</p>
+        </a>
+        <a href="#" class="card reveal">
+          <div class="media media--tone-4"><img src="assets/img/coleccion-4.jpg" alt="" onerror="this.remove()"></div>
+          <h3>Colección IV</h3><p>Cápsula</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- LOOKBOOK carrusel horizontal (patrón McQueen) -->
+    <section class="section section--dark" id="lookbook">
+      <div class="section__head">
+        <h2 class="section__title">Lookbook</h2>
+        <div class="carousel__controls">
+          <button class="carousel__btn" data-dir="-1" aria-label="Anterior">←</button>
+          <button class="carousel__btn" data-dir="1" aria-label="Siguiente">→</button>
+        </div>
+      </div>
+      <div class="carousel" id="carousel">
+        <figure class="look"><div class="media media--tone-1"><img src="assets/img/look-01.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 01</figcaption></figure>
+        <figure class="look"><div class="media media--tone-2"><img src="assets/img/look-02.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 02</figcaption></figure>
+        <figure class="look"><div class="media media--tone-3"><img src="assets/img/look-03.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 03</figcaption></figure>
+        <figure class="look"><div class="media media--tone-4"><img src="assets/img/look-04.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 04</figcaption></figure>
+        <figure class="look"><div class="media media--tone-1"><img src="assets/img/look-05.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 05</figcaption></figure>
+        <figure class="look"><div class="media media--tone-2"><img src="assets/img/look-06.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 06</figcaption></figure>
+        <figure class="look"><div class="media media--tone-3"><img src="assets/img/look-07.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 07</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ATELIER: imagen full-bleed con texto superpuesto -->
+    <section class="banner" id="atelier">
+      <div class="media media--tone-4">
+        <img src="assets/img/atelier.jpg" alt="El atelier" onerror="this.remove()">
+      </div>
+      <div class="banner__content">
+        <p class="eyebrow">El Atelier</p>
+        <h2>Oficio y detalle</h2>
+        <a href="#contacto" class="btn btn--light">Agendar cita</a>
+      </div>
+    </section>
+
+    <!-- SOBRE LA DISEÑADORA -->
+    <section class="about" id="sobre">
+      <div class="about__img media media--tone-2 reveal">
+        <img src="assets/img/evelyn.jpg" alt="Retrato de Evelyn Garcia" onerror="this.remove()">
+      </div>
+      <div class="about__text reveal">
+        <p class="eyebrow">Sobre Evelyn</p>
+        <h2>Evelyn Garcia</h2>
+        <p>
+          Texto de biografía. Reemplazar con la historia de Evelyn: formación,
+          inspiración, filosofía de diseño y momentos clave de su carrera.
+        </p>
+        <p>
+          Segundo párrafo opcional: técnicas, materiales, colaboraciones,
+          desfiles y prensa.
+        </p>
+        <a href="#contacto" class="link">Contactar</a>
+      </div>
+    </section>
+
+    <!-- CONTACTO / NEWSLETTER -->
+    <section class="contact" id="contacto">
+      <h2 class="section__title">Contacto</h2>
+      <p>Citas privadas, prensa y colaboraciones.</p>
+      <a class="contact__mail" href="mailto:hola@evelyngarcia.com">hola@evelyngarcia.com</a>
+      <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Gracias';">
+        <label for="email" class="eyebrow">Newsletter</label>
+        <div class="newsletter__row">
+          <input id="email" type="email" placeholder="Correo electrónico" required>
+          <button type="submit">Suscribirse</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER multicolumna (patrón McQueen) -->
+  <footer class="footer">
+    <div class="footer__cols">
+      <div>
+        <h4>Evelyn Garcia</h4>
+        <a href="#sobre">Sobre</a>
+        <a href="#atelier">Atelier</a>
+        <a href="#colecciones">Colecciones</a>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <a href="#contacto">Citas privadas</a>
+        <a href="#contacto">Hecho a medida</a>
+        <a href="#contacto">Prensa</a>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <a href="#" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">TikTok</a>
+        <a href="#" target="_blank" rel="noopener">Pinterest</a>
+      </div>
+    </div>
+    <div class="footer__logo">Evelyn Garcia</div>
+    <p class="footer__legal">© <span id="year"></span> Evelyn Garcia. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

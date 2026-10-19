@@ -1,4 +1,4 @@
-// Header: transparente sobre el hero, sólido al hacer scroll
+// Header: muestra la línea inferior al hacer scroll
 const header = document.getElementById('header');
 const onScroll = () => header.classList.toggle('is-solid', window.scrollY > 40);
 window.addEventListener('scroll', onScroll, { passive: true });
@@ -20,15 +20,6 @@ openBtn.addEventListener('click', () => setMenu(true));
 closeBtn.addEventListener('click', () => setMenu(false));
 overlay.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', () => setMenu(false)));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
-
-// Carrusel del lookbook
-const carousel = document.getElementById('carousel');
-document.querySelectorAll('.carousel__btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const step = carousel.querySelector('.look').offsetWidth + 12;
-    carousel.scrollBy({ left: step * Number(btn.dataset.dir), behavior: 'smooth' });
-  });
-});
 
 // Animación de aparición al hacer scroll
 const io = new IntersectionObserver(entries => {

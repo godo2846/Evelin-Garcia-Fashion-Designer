@@ -3,34 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Evelyn Garcia — Fashion Designer</title>
-  <meta name="description" content="Evelyn Garcia, diseñadora de moda. Colecciones, lookbook y atelier.">
+  <title>Evelyn García — Fashion Designer</title>
+  <meta name="description" content="Evelyn García, diseñadora de moda. Portafolio 2026: Enredo, Cuerpos de Bruma, Eterna Flores, Raíces de Amalgama y The Bridal Class Party.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-  <!-- HEADER: menú a la izquierda, logo centrado, utilidades a la derecha (patrón McQueen / Jacquemus) -->
   <header class="header" id="header">
     <button class="header__menu" id="menuOpen" aria-label="Abrir menú" aria-expanded="false">
       <span></span><span></span>
     </button>
-    <a href="#top" class="header__logo">Evelyn Garcia</a>
+    <a href="#top" class="header__logo">Evelyn García</a>
     <nav class="header__utils" aria-label="Utilidades">
       <a href="#colecciones">Colecciones</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <!-- MENÚ OVERLAY a pantalla completa -->
   <div class="overlay" id="overlay" aria-hidden="true">
     <button class="overlay__close" id="menuClose" aria-label="Cerrar menú">Cerrar</button>
     <nav class="overlay__nav">
-      <a href="#colecciones">Colecciones</a>
-      <a href="#lookbook">Lookbook</a>
-      <a href="#atelier">Atelier</a>
+      <a href="#enredo"><small>01</small>Enredo</a>
+      <a href="#cuerpos-de-bruma"><small>02</small>Cuerpos de Bruma</a>
+      <a href="#eterna-flores"><small>03</small>Eterna Flores</a>
+      <a href="#raices-de-amalgama"><small>04</small>Raíces de Amalgama</a>
+      <a href="#the-bridal-class-party"><small>05</small>The Bridal Class Party</a>
       <a href="#sobre">Sobre Evelyn</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -42,159 +41,400 @@
 
   <main id="top">
 
-    <!-- HERO a pantalla completa con título de temporada + CTA -->
+    <!-- PORTADA -->
     <section class="hero">
-      <div class="media media--tone-1">
-        <img src="assets/img/hero.jpg" alt="Campaña de la colección actual" onerror="this.remove()">
+      <div class="hero__text">
+        <p class="eyebrow">Portafolio 2026</p>
+        <h1 class="hero__title">Evelyn<br><em>García</em></h1>
+        <p class="hero__role">Fashion designer</p>
+        <p class="hero__lead">
+          Cinco colecciones, del macramé a la organza: accesorios, prêt-à-porter,
+          una pieza pensada para la Met Gala y una propuesta nupcial.
+        </p>
+        <div class="hero__actions">
+          <a href="#colecciones" class="btn btn--accent">Ver colecciones</a>
+          <a href="#contacto" class="link">Contacto</a>
+        </div>
       </div>
-      <div class="hero__content">
-        <p class="eyebrow">Otoño Invierno 2026</p>
-        <h1 class="hero__title">La Colección</h1>
-        <a href="#colecciones" class="btn btn--light">Descubrir</a>
-      </div>
+      <figure class="hero__img">
+        <img src="assets/img/05-the-bridal-class-party/web/velo.jpg" alt="Modelo con el velo-capucha de organza de The Bridal Class Party">
+      </figure>
     </section>
 
-    <!-- SPLIT EDITORIAL: dos imágenes 50/50 con texto (patrón Jacquemus) -->
-    <section class="split">
-      <a href="#lookbook" class="split__item">
-        <div class="media media--tone-2">
-          <img src="assets/img/editorial-1.jpg" alt="" onerror="this.remove()">
-        </div>
-        <div class="split__caption">
-          <p class="eyebrow">Mujer</p>
-          <h2>Prêt-à-porter</h2>
-          <span class="link">Ver más</span>
-        </div>
-      </a>
-      <a href="#atelier" class="split__item">
-        <div class="media media--tone-3">
-          <img src="assets/img/editorial-2.jpg" alt="" onerror="this.remove()">
-        </div>
-        <div class="split__caption">
-          <p class="eyebrow">Hecho a medida</p>
-          <h2>Alta Costura</h2>
-          <span class="link">Ver más</span>
-        </div>
-      </a>
-    </section>
-
-    <!-- MANIFIESTO -->
-    <section class="statement reveal">
-      <p>
-        “Diseño piezas que cuentan una historia: estructura, oficio y emoción
-        en cada costura.”
-      </p>
-      <span class="eyebrow">— Evelyn Garcia</span>
-    </section>
-
-    <!-- COLECCIONES en grilla de 4 (patrón McQueen "New Season's Arrivals") -->
-    <section class="section" id="colecciones">
+    <!-- ÍNDICE -->
+    <section class="section index" id="colecciones">
       <div class="section__head">
-        <h2 class="section__title">Colecciones</h2>
-        <a href="#lookbook" class="link">Ver todo</a>
-      </div>
-      <div class="grid">
-        <a href="#" class="card reveal">
-          <div class="media media--tone-1"><img src="assets/img/coleccion-1.jpg" alt="" onerror="this.remove()"></div>
-          <h3>Colección I</h3><p>Otoño Invierno 2026</p>
-        </a>
-        <a href="#" class="card reveal">
-          <div class="media media--tone-2"><img src="assets/img/coleccion-2.jpg" alt="" onerror="this.remove()"></div>
-          <h3>Colección II</h3><p>Primavera Verano 2026</p>
-        </a>
-        <a href="#" class="card reveal">
-          <div class="media media--tone-3"><img src="assets/img/coleccion-3.jpg" alt="" onerror="this.remove()"></div>
-          <h3>Colección III</h3><p>Otoño Invierno 2025</p>
-        </a>
-        <a href="#" class="card reveal">
-          <div class="media media--tone-4"><img src="assets/img/coleccion-4.jpg" alt="" onerror="this.remove()"></div>
-          <h3>Colección IV</h3><p>Cápsula</p>
-        </a>
-      </div>
-    </section>
-
-    <!-- LOOKBOOK carrusel horizontal (patrón McQueen) -->
-    <section class="section section--dark" id="lookbook">
-      <div class="section__head">
-        <h2 class="section__title">Lookbook</h2>
-        <div class="carousel__controls">
-          <button class="carousel__btn" data-dir="-1" aria-label="Anterior">←</button>
-          <button class="carousel__btn" data-dir="1" aria-label="Siguiente">→</button>
+        <div>
+          <p class="eyebrow">Colecciones</p>
+          <h2 class="section__title">Índice</h2>
         </div>
       </div>
-      <div class="carousel" id="carousel">
-        <figure class="look"><div class="media media--tone-1"><img src="assets/img/look-01.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 01</figcaption></figure>
-        <figure class="look"><div class="media media--tone-2"><img src="assets/img/look-02.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 02</figcaption></figure>
-        <figure class="look"><div class="media media--tone-3"><img src="assets/img/look-03.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 03</figcaption></figure>
-        <figure class="look"><div class="media media--tone-4"><img src="assets/img/look-04.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 04</figcaption></figure>
-        <figure class="look"><div class="media media--tone-1"><img src="assets/img/look-05.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 05</figcaption></figure>
-        <figure class="look"><div class="media media--tone-2"><img src="assets/img/look-06.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 06</figcaption></figure>
-        <figure class="look"><div class="media media--tone-3"><img src="assets/img/look-07.jpg" alt="" onerror="this.remove()"></div><figcaption>Look 07</figcaption></figure>
-      </div>
+      <ol class="index__list">
+        <li>
+          <a href="#enredo" class="index__card">
+            <div class="media"><img src="assets/img/01-enredo/web/retrato.jpg" alt="" loading="lazy"></div>
+            <span class="index__num">01</span>
+            <h3>Enredo</h3>
+            <p>Accesorios</p>
+          </a>
+        </li>
+        <li>
+          <a href="#cuerpos-de-bruma" class="index__card">
+            <div class="media"><img src="assets/img/02-cuerpos-de-bruma/web/retrato.jpg" alt="" loading="lazy"></div>
+            <span class="index__num">02</span>
+            <h3>Cuerpos de Bruma</h3>
+            <p>Prêt-à-porter</p>
+          </a>
+        </li>
+        <li>
+          <a href="#eterna-flores" class="index__card">
+            <div class="media"><img src="assets/img/03-eterna-flores/web/retrato.jpg" alt="" loading="lazy"></div>
+            <span class="index__num">03</span>
+            <h3>Eterna Flores</h3>
+            <p>Met Gala 2025</p>
+          </a>
+        </li>
+        <li>
+          <a href="#raices-de-amalgama" class="index__card">
+            <div class="media"><img src="assets/img/04-raices-de-amalgama/web/orquidea.jpg" alt="" loading="lazy"></div>
+            <span class="index__num">04</span>
+            <h3>Raíces de Amalgama</h3>
+            <p>Prêt-à-porter</p>
+          </a>
+        </li>
+        <li>
+          <a href="#the-bridal-class-party" class="index__card">
+            <div class="media"><img src="assets/img/05-the-bridal-class-party/web/ventana.jpg" alt="" loading="lazy"></div>
+            <span class="index__num">05</span>
+            <h3>The Bridal Class Party</h3>
+            <p>Nupcial</p>
+          </a>
+        </li>
+      </ol>
     </section>
 
-    <!-- ATELIER: imagen full-bleed con texto superpuesto -->
-    <section class="banner" id="atelier">
-      <div class="media media--tone-4">
-        <img src="assets/img/atelier.jpg" alt="El atelier" onerror="this.remove()">
-      </div>
-      <div class="banner__content">
-        <p class="eyebrow">El Atelier</p>
-        <h2>Oficio y detalle</h2>
-        <a href="#contacto" class="btn btn--light">Agendar cita</a>
-      </div>
-    </section>
+    <!-- 01 ENREDO -->
+    <article class="coleccion" id="enredo" style="--tono: #4a6337;">
+      <header class="coleccion__head">
+        <span class="coleccion__num">01</span>
+        <div>
+          <p class="eyebrow">Accesorios</p>
+          <h2 class="coleccion__title">Enredo</h2>
+        </div>
+      </header>
 
-    <!-- SOBRE LA DISEÑADORA -->
+      <div class="coleccion__intro">
+        <figure class="coleccion__lead reveal">
+          <img src="assets/img/01-enredo/web/retrato.jpg" alt="Modelo con vestido blanco y el cinturón verde de Enredo con bolsos colgantes, en una cueva" loading="lazy">
+        </figure>
+        <div class="coleccion__text reveal">
+          <p class="eyebrow">Concepto y racional</p>
+          <p>
+            En nuestro mundo tan globalizado, lleno de infinitas permutaciones de información
+            virtual, podemos vivir la realidad que queramos y experimentar una interacción sin
+            barreras, llenándonos de recuerdos con distintas personas en diferentes escenarios.
+            Sin embargo, lo que complica nuestras interacciones son nuestros egos, diferentes y
+            especiales por el simple hecho de su singularidad.
+          </p>
+          <p>
+            Estas partes de nosotros son como un enredo de momentos, formas y profundidades: de
+            personas, lugares, animales y hasta las cosas más pequeñas que podamos valorar. Y es
+            justo ahí donde reluce nuestra creatividad, como un paso al frente de nuestro ego,
+            de camino a la empatía dentro de ese gran enredo.
+          </p>
+          <p>
+            Todas nuestras formas están guardadas en algún lugar de nuestra memoria, junto a
+            lugares y experiencias trascendentales. Por eso las recordamos como mini bolsos,
+            diversos en su forma y en sus detalles, repartidos en un tejido: una base de tiras
+            de tela superpuestas que abraza las caderas, con abalorios que simulan cristales
+            cosidos, todo sostenido en un cinturón que celebra esa travesía.
+          </p>
+
+          <dl class="piezas">
+            <div><dt>Cinturón ajustable</dt><dd>Macramé, aro de llavero y bolsa tipo cargo en cuerina</dd></div>
+            <div><dt>Riñonera</dt><dd>Macramé con zipper, ajustable en ambos lados</dd></div>
+            <div><dt>Salida de baño</dt><dd>Macramé con doble bolsillo y compartimento tarjetero</dd></div>
+            <div><dt>Cinturón trenzado</dt><dd>Bolsos removibles para celular y monedero</dd></div>
+          </dl>
+
+          <div class="paleta" aria-label="Paleta de color">
+            <span style="--c:#d9963a" title="Ocre"></span>
+            <span style="--c:#4a6337" title="Verde oliva"></span>
+            <span style="--c:#c9ad95" title="Arena"></span>
+            <span style="--c:#ede7d6" title="Crudo"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="galeria">
+        <figure class="galeria__item galeria__item--wide reveal"><img src="assets/img/01-enredo/web/cinturon.jpg" alt="Detalle del cinturón verde con bolsos y llaves colgantes" loading="lazy"></figure>
+        <figure class="galeria__item reveal"><img src="assets/img/01-enredo/web/playa.jpg" alt="Modelo junto al mar con el cinturón de Enredo" loading="lazy"></figure>
+        <figure class="galeria__item reveal"><img src="assets/img/01-enredo/web/cueva.jpg" alt="Modelo de cuerpo entero en la entrada de una cueva" loading="lazy"></figure>
+      </div>
+
+      <figure class="boceto reveal">
+        <img src="assets/img/01-enredo/web/bocetos.jpg" alt="Bocetos de cinturones, riñoneras y salidas de baño en macramé" loading="lazy">
+        <figcaption class="eyebrow">Bocetos</figcaption>
+      </figure>
+    </article>
+
+    <!-- 02 CUERPOS DE BRUMA -->
+    <article class="coleccion coleccion--flip" id="cuerpos-de-bruma" style="--tono: #b5422b;">
+      <header class="coleccion__head">
+        <span class="coleccion__num">02</span>
+        <div>
+          <p class="eyebrow">Prêt-à-porter</p>
+          <h2 class="coleccion__title">Cuerpos de Bruma</h2>
+        </div>
+      </header>
+
+      <div class="coleccion__intro">
+        <figure class="coleccion__lead reveal">
+          <img src="assets/img/02-cuerpos-de-bruma/web/retrato.jpg" alt="Modelo con corset blanco y rojo con cristales, sentada a una mesa con vino y chocolates" loading="lazy">
+        </figure>
+        <div class="coleccion__text reveal">
+          <blockquote class="verso">
+            <p>El alma entre lo etéreo y lo dulce.</p>
+            <p>El alma que fluye y el cuerpo que la contiene,<br>
+            lo invisible que se hace visible,<br>
+            lo dulce que se vuelve terrenal.</p>
+            <p>En cada prenda, el espíritu de la Tierra se viste otra vez<br>
+            entre la bruma, el cacao y la memoria del fuego.</p>
+          </blockquote>
+          <p>
+            Inspirada en la idea de los espíritus antes de tener cuerpo, envueltos entre la
+            bruma, la colección explora la materialización del alma a través de texturas
+            suaves, tonos envolventes y acentos cálidos.
+          </p>
+          <p>
+            En su interpretación, el chocolate Reese’s simboliza ese acto de unión entre dos
+            mundos: lo etéreo (el espíritu) y lo terrenal (el placer). Así como el alma obtiene
+            cuerpo, el cacao se funde con la mantequilla de maní, creando una armonía
+            inesperada y deliciosa.
+          </p>
+
+          <div class="paleta" aria-label="Paleta de color">
+            <span style="--c:#b5622a" title="Caramelo"></span>
+            <span style="--c:#5e3f2d" title="Cacao"></span>
+            <span style="--c:#ebd7a8" title="Maní"></span>
+            <span style="--c:#efe6e4" title="Bruma"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="galeria">
+        <figure class="galeria__item reveal"><img src="assets/img/02-cuerpos-de-bruma/web/jardin.jpg" alt="Modelo entre plantas tropicales con brazaletes dorados" loading="lazy"></figure>
+        <figure class="galeria__item reveal"><img src="assets/img/02-cuerpos-de-bruma/web/puerta.jpg" alt="Modelo sentada frente a una puerta de madera" loading="lazy"></figure>
+        <figure class="galeria__item galeria__item--wide reveal"><img src="assets/img/02-cuerpos-de-bruma/web/detalle-anillo.jpg" alt="Detalle de la mano con anillo de perla tomando un chocolate" loading="lazy"></figure>
+      </div>
+
+      <figure class="boceto reveal">
+        <img src="assets/img/02-cuerpos-de-bruma/web/bocetos.jpg" alt="Seis bocetos de looks en crudo, cacao y caramelo" loading="lazy">
+        <figcaption class="eyebrow">Bocetos</figcaption>
+      </figure>
+    </article>
+
+    <!-- 03 ETERNA FLORES -->
+    <article class="coleccion" id="eterna-flores" style="--tono: #1a1714;">
+      <header class="coleccion__head">
+        <span class="coleccion__num">03</span>
+        <div>
+          <p class="eyebrow">Met Gala 2025</p>
+          <h2 class="coleccion__title">Eterna Flores</h2>
+        </div>
+      </header>
+
+      <div class="coleccion__intro">
+        <figure class="coleccion__lead reveal">
+          <img src="assets/img/03-eterna-flores/web/retrato.jpg" alt="Modelo con blazer blanco de solapa bordada con flores negras y mangas globo" loading="lazy">
+        </figure>
+        <div class="coleccion__text reveal">
+          <p class="destacado">
+            Un blazer con cuello oversized adornado con bordes de flores negras, hasta la
+            cintura. Mangas globo transparentes con detalles de listón negro: romanticismo y
+            sofisticación con un toque dramático y moderno.
+          </p>
+          <p>
+            El blazer reinterpreta la elegancia del vestido de Laura Harrier con una visión
+            contemporánea y personal. Transmite fuerza y confianza, en línea con el espíritu
+            audaz de la Met Gala 2025. La manga globo aporta volumen y movimiento, y simboliza
+            libertad y expresividad; la solapa con borde floral introduce delicadeza y
+            naturaleza, en contraste con la estructura del blazer, y resalta la dualidad entre
+            lo orgánico y lo formal.
+          </p>
+          <p>
+            El largo a la cintura permite una silueta moderna y versátil. En conjunto, el
+            diseño celebra la innovación en la moda, combina tradición y vanguardia, y rinde
+            homenaje a la creatividad y la fantasía que caracterizan a la Met Gala.
+          </p>
+
+          <div class="paleta" aria-label="Paleta de color">
+            <span style="--c:#000000" title="Negro"></span>
+            <span style="--c:#efeadb" title="Marfil"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="galeria">
+        <figure class="galeria__item reveal"><img src="assets/img/03-eterna-flores/web/sentada.jpg" alt="Modelo sentada en el césped con el blazer de mangas globo" loading="lazy"></figure>
+        <figure class="galeria__item reveal"><img src="assets/img/03-eterna-flores/web/detalle-solapa.jpg" alt="Detalle de la solapa bordada con flores negras" loading="lazy"></figure>
+        <figure class="galeria__item reveal"><img src="assets/img/03-eterna-flores/web/arbol.jpg" alt="Modelo apoyada en un árbol con mangas atadas con listón negro" loading="lazy"></figure>
+        <figure class="galeria__item reveal"><img src="assets/img/03-eterna-flores/web/detalle-manga.jpg" alt="Detalle de la manga con flores bordadas sobre el pantalón negro" loading="lazy"></figure>
+      </div>
+
+      <figure class="boceto boceto--narrow reveal">
+        <img src="assets/img/03-eterna-flores/web/boceto.jpg" alt="Boceto del blazer con pantalón negro y muestras de tela" loading="lazy">
+        <figcaption class="eyebrow">Boceto</figcaption>
+      </figure>
+    </article>
+
+    <!-- 04 RAÍCES DE AMALGAMA -->
+    <article class="coleccion coleccion--flip" id="raices-de-amalgama" style="--tono: #9b1f2a;">
+      <header class="coleccion__head">
+        <span class="coleccion__num">04</span>
+        <div>
+          <p class="eyebrow">Prêt-à-porter</p>
+          <h2 class="coleccion__title">Raíces de Amalgama</h2>
+        </div>
+      </header>
+
+      <div class="coleccion__intro">
+        <figure class="coleccion__lead reveal">
+          <img src="assets/img/04-raices-de-amalgama/web/retrato.jpg" alt="Modelo con top rosa de volantes de satén y falda café" loading="lazy">
+        </figure>
+        <div class="coleccion__text reveal">
+          <blockquote class="verso">
+            <p>En el rincón donde el sol se adorna,<br>
+            las orquídeas susurran con voz de terciopelo,<br>
+            bailan sombras de luz en la mañana,<br>
+            en un abrazo eterno con la tierra y el cielo.</p>
+            <p>Sus raíces se enredan, un juego sutil,<br>
+            un tejido de sueños, de vida y de anhelo,<br>
+            mientras el viento acaricia su piel,<br>
+            manteniendo en secreto un inquebrantable encanto.</p>
+            <p>Macramé de sueños, trenzas de vida,<br>
+            sus fibras entrelazan la magia perdida,<br>
+            cada nudo un abrazo, cada lazo un juramento,<br>
+            raíz de amalgama, en el tiempo, un momento.</p>
+          </blockquote>
+          <p>
+            La colección se inspira en la belleza y la complejidad de la orquídea, una flor
+            que representa la elegancia, la singularidad y la conexión con la naturaleza. La
+            orquídea no solo es un símbolo de lujo y refinamiento: también tiene raíces
+            profundas y enredadas. El concepto se extiende a la idea de amalgama, donde
+            diferentes elementos se fusionan para crear algo nuevo y hermoso.
+          </p>
+
+          <div class="paleta" aria-label="Paleta de color">
+            <span style="--c:#f5ede4" title="Pétalo"></span>
+            <span style="--c:#d9b5b5" title="Rosa orquídea"></span>
+            <span style="--c:#6a3a1e" title="Raíz"></span>
+            <span style="--c:#6e9f45" title="Tallo"></span>
+            <span style="--c:#e5d8c6" title="Lino"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="galeria">
+        <figure class="galeria__item galeria__item--wide reveal"><img src="assets/img/04-raices-de-amalgama/web/recostada.jpg" alt="Modelo recostada con falda café de volantes" loading="lazy"></figure>
+        <figure class="galeria__item reveal"><img src="assets/img/04-raices-de-amalgama/web/espalda.jpg" alt="Espalda del top con cordones y una vara de orquídeas" loading="lazy"></figure>
+        <figure class="galeria__item reveal"><img src="assets/img/04-raices-de-amalgama/web/detalle-volantes.jpg" alt="Detalle de los volantes rosa con macramé café al centro" loading="lazy"></figure>
+      </div>
+
+      <figure class="boceto reveal">
+        <img src="assets/img/04-raices-de-amalgama/web/bocetos.jpg" alt="Seis bocetos en rosa, café, verde y lino con detalles de macramé" loading="lazy">
+        <figcaption class="eyebrow">Bocetos</figcaption>
+      </figure>
+    </article>
+
+    <!-- 05 THE BRIDAL CLASS PARTY -->
+    <article class="coleccion" id="the-bridal-class-party" style="--tono: #1a1714;">
+      <header class="coleccion__head">
+        <span class="coleccion__num">05</span>
+        <div>
+          <p class="eyebrow">Nupcial</p>
+          <h2 class="coleccion__title">The Bridal Class Party</h2>
+        </div>
+      </header>
+
+      <div class="coleccion__intro">
+        <figure class="coleccion__lead reveal">
+          <img src="assets/img/05-the-bridal-class-party/web/ventana.jpg" alt="Novia con corset bordado y mangas de organza junto a una ventana" loading="lazy">
+        </figure>
+        <div class="coleccion__text reveal">
+          <p class="destacado">
+            Una propuesta bridal que busca el equilibrio entre lo arquitectónico y lo etéreo,
+            y reinterpreta la elegancia clásica de Dior desde un lenguaje moderno.
+          </p>
+          <p>
+            El diseño une la fuerza estructural de un corset con la suavidad de pliegues largos
+            y movimiento ligero, en una silueta que celebra a la novia contemporánea: femenina,
+            segura y libre.
+          </p>
+          <p>
+            La pieza central del corset incorpora un bordado de flores con lentejuelas blancas,
+            símbolo de pureza y luz. La parte inferior, un pantalón con paletones largos y
+            voluminosos, se expande y crea la ilusión de una falda, con dramatismo y fluidez.
+            Un velo-capucha envuelve el look con un aura romántica y mística.
+          </p>
+        </div>
+      </div>
+
+      <div class="galeria">
+        <figure class="galeria__item reveal"><img src="assets/img/05-the-bridal-class-party/web/banca.jpg" alt="Novia sentada en una banca de madera con ramo de lirios y rosas" loading="lazy"></figure>
+        <figure class="galeria__item reveal"><img src="assets/img/05-the-bridal-class-party/web/ramo.jpg" alt="Novia con velo y ramo apoyada en una pared texturizada" loading="lazy"></figure>
+        <figure class="galeria__item galeria__item--wide reveal"><img src="assets/img/05-the-bridal-class-party/web/espalda-corset.jpg" alt="Espalda del corset con cordones y capa de organza" loading="lazy"></figure>
+      </div>
+
+      <figure class="boceto reveal">
+        <img src="assets/img/05-the-bridal-class-party/web/boceto.jpg" alt="Boceto del look nupcial de frente, perfil y espalda" loading="lazy">
+        <figcaption class="eyebrow">Boceto</figcaption>
+      </figure>
+    </article>
+
+    <!-- SOBRE EVELYN: la lámina "about me" del portafolio está pendiente; reemplazar con la biografía real -->
     <section class="about" id="sobre">
-      <div class="about__img media media--tone-2 reveal">
-        <img src="assets/img/evelyn.jpg" alt="Retrato de Evelyn Garcia" onerror="this.remove()">
-      </div>
       <div class="about__text reveal">
         <p class="eyebrow">Sobre Evelyn</p>
-        <h2>Evelyn Garcia</h2>
+        <h2>Del boceto a la prenda</h2>
         <p>
-          Texto de biografía. Reemplazar con la historia de Evelyn: formación,
-          inspiración, filosofía de diseño y momentos clave de su carrera.
+          Evelyn García es diseñadora de moda. Cada una de sus colecciones parte de una idea
+          escrita, a veces un poema, y se construye con referencias que van de la orquídea al
+          cacao: macramé, bordado, organza, satén y cristales cosidos a mano.
         </p>
-        <p>
-          Segundo párrafo opcional: técnicas, materiales, colaboraciones,
-          desfiles y prensa.
-        </p>
-        <a href="#contacto" class="link">Contactar</a>
       </div>
+      <ol class="proceso reveal">
+        <li><h3>Concepto</h3><p>Un texto que define la historia y el racional de la colección.</p></li>
+        <li><h3>Moodboard</h3><p>Referencias, texturas y una paleta de color propia.</p></li>
+        <li><h3>Bocetos</h3><p>Ilustración a mano de cada look, con sus materiales y detalles.</p></li>
+        <li><h3>Lookbook</h3><p>Las prendas terminadas, fotografiadas en su entorno.</p></li>
+      </ol>
     </section>
 
-    <!-- CONTACTO / NEWSLETTER -->
+    <!-- CONTACTO -->
     <section class="contact" id="contacto">
-      <h2 class="section__title">Contacto</h2>
-      <p>Citas privadas, prensa y colaboraciones.</p>
+      <p class="eyebrow">Contacto</p>
+      <h2 class="section__title">Hablemos</h2>
+      <p>Piezas a medida, prensa y colaboraciones.</p>
       <a class="contact__mail" href="mailto:hola@evelyngarcia.com">hola@evelyngarcia.com</a>
-      <form class="newsletter" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Gracias';">
-        <label for="email" class="eyebrow">Newsletter</label>
-        <div class="newsletter__row">
-          <input id="email" type="email" placeholder="Correo electrónico" required>
-          <button type="submit">Suscribirse</button>
-        </div>
-      </form>
     </section>
 
   </main>
 
-  <!-- FOOTER multicolumna (patrón McQueen) -->
   <footer class="footer">
     <div class="footer__cols">
       <div>
-        <h4>Evelyn Garcia</h4>
-        <a href="#sobre">Sobre</a>
-        <a href="#atelier">Atelier</a>
-        <a href="#colecciones">Colecciones</a>
+        <h4>Colecciones</h4>
+        <a href="#enredo">Enredo</a>
+        <a href="#cuerpos-de-bruma">Cuerpos de Bruma</a>
+        <a href="#eterna-flores">Eterna Flores</a>
+        <a href="#raices-de-amalgama">Raíces de Amalgama</a>
+        <a href="#the-bridal-class-party">The Bridal Class Party</a>
       </div>
       <div>
-        <h4>Servicios</h4>
-        <a href="#contacto">Citas privadas</a>
-        <a href="#contacto">Hecho a medida</a>
-        <a href="#contacto">Prensa</a>
+        <h4>Evelyn García</h4>
+        <a href="#sobre">Sobre Evelyn</a>
+        <a href="#contacto">Contacto</a>
       </div>
       <div>
         <h4>Síguenos</h4>
@@ -203,8 +443,8 @@
         <a href="#" target="_blank" rel="noopener">Pinterest</a>
       </div>
     </div>
-    <div class="footer__logo">Evelyn Garcia</div>
-    <p class="footer__legal">© <span id="year"></span> Evelyn Garcia. Todos los derechos reservados.</p>
+    <div class="footer__logo">Evelyn García</div>
+    <p class="footer__legal">© <span id="year"></span> Evelyn García. Todos los derechos reservados.</p>
   </footer>
 
   <script src="js/main.js"></script>
